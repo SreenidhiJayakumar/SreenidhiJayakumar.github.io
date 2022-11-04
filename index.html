@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" property="og:description" content="Sreenidhi Personal Website" />
+  <meta name="author" content="Sreenidhi J" />
+  <title>Sreenidhi</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon-design.svg" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href='#about' id="about-a">About</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href='#portfolio' id="portfolio-a">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href='assets/pdfs/Sreenidhi_Resume.pdf' id="resume-a" target="_blank">Resume</a>
+          </li>
+          <a href="https://www.linkedin.com/in/sreenidhi-jai-806a60213/" target="_blank">
+            <ion-icon name="logo-linkedin" style="width: 30px; height: 30px; color: #313335; margin-right: 0; right: 0; top: 0;"></ion-icon>
+          </a>
+        </ul>
+      </nav>
+
+
+      <!--
+        - #VIEW PROJECT
+      -->
+
+      <div id="project" style="display: none; align-items: center; flex-direction: row;">
+
+        <p>Project Data</p>
+
+      </div>
+
+
+      <!--
+        - #ABOUT
+      -->
+      <article class="about" id="about" style="padding-top: 20px;">
+        <!-- <header>
+            <h2 class="h2 article-title"></h2>
+          </header> -->
+
+        <!-- <section class="about-text"> -->
+        <img src="assets/images/intro.gif"
+          style="border-radius: 20px; display: block; margin-left: auto; margin-right: auto;" width="80%"
+          height="80%" />
+        <!-- </section> -->
+      </article>
+
+
+      <!--
+        - Project Modal
+      -->
+
+      <div class="modal-container" data-modal-container>
+
+        <div class="overlay" data-overlay></div>
+
+        <section class="project-modal">
+
+          <button class="modal-close-btn" data-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <section class="testimonials">  
+
+        </section>
+        </section>
+
+      </div>
+
+      <!--
+        - #PROJECTS
+      -->
+
+      <article class="portfolio" id="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Architecture</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>UX</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Others</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Architecture</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>UX</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Others</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+                <img src="./assets/pdftoimages/VIRTUAL REALITY IN ARCHITECTURE/VIRTUAL REALITY IN ARCHITECTURE-01.jpg" alt="Portfolio Projects" loading="eager"
+                  data-project-img />
+              </figure>
+
+              <h3 class="project-title" data-project-title>VIRTUAL REALITY IN ARCHITECTURE</h3>
+
+              <p class="project-category">
+                
+              </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/CAMPUS1.1/CAMPUS1.1-01.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>CAMPUS DESIGN</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MIXED USE1.1/MIXED USE1.1-01.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>WATER FRONT - MALL + OFFICE</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ux">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/png2pdf/png2pdf-01.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>DISCORD SCHOOL</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/SAC/SAC-01.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>STUDENT ACTIVITY CENTER</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/SPRINT 2 SOCIAL INFRA/SPRINT 2 SOCIAL INFRA-1.jpg" alt="Portfolio Projects" loading="eager"
+                    data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>DESIGN OF URBAN SOCIAL INFRASTRUCTURE</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/SRPINT 1 ROAD INFRA/SRPINT 1 ROAD INFRA-1.jpg" alt="Portfolio Projects" loading="eager"
+                    data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>DESIGN OF ROAD INFRASTRUCTURE AND TRANSIT HUB</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="architecture">
+              <a href="#project">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/UD SEM/UD SEM-01.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>URBAN DESIGN STUDIO</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <!-- Other Projects -->
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MOOD BOARD1.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>INTERIOR DESIGN CONCEPT</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MOOD BOARD2.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>MODERN INTERIOR DESIGN OFFICE</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MOOD BOARD3.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>START-APP OFFICE</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MOOD BOARD4.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>THE MONTESSORI SCHOOL</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="others">
+              <a>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/pdftoimages/MOOD BOARD5.jpg" alt="Portfolio Projects" loading="eager" data-project-img />
+                </figure>
+
+                <h3 class="project-title" data-project-title>THE READERS CAFE</h3>
+
+                <p class="project-category">
+                  
+                </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <!-- <article class="resume" id="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Member Technical, Oracle</h4>
+
+              <span>June 2022 — Present</span>
+
+              <p class="timeline-text">
+                Multi-Xperience Platform Data Insight development team in
+                Oracle Cloud Infrastructure (OCI).
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Research Intern, Samsung R&D Institute
+              </h4>
+
+              <span>October 2021 – February 2022</span>
+
+              <p class="timeline-text">
+                Worked on Hierarchical Classification of mobile apps using
+                Active Learning.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">SWE Intern, Oracle</h4>
+
+              <span>June 2021 – July 2021</span>
+
+              <p class="timeline-text">
+                Data Catalog product team in Oracle Cloud Infrastructure
+                (OCI).
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                NLP Researcher, Fidelity Investments
+              </h4>
+
+              <span>October 2020 – April 2021</span>
+
+              <p class="timeline-text">
+                Worked on SOTA text summarization and question answering
+                techniques using Transformers and Haystack. Developed and
+                fine-tuned Transformer based models such as Pegasus, Bart,
+                Longformer and Reformer for financial and legal domains. Built
+                a CLI to train, validate and test the models.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                National Institute of Technology, Tiruchirapalli
+              </h4>
+
+              <span>2018 — 2022</span>
+
+              <p class="timeline-text">
+                <b>Bachelor's in Computer Science </b><br />
+                Core Member of Spider - Technology and Innovation Club of NIT
+                Trichy, Event Manager at Festember, College Table Tennis Team.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                P. S. Senior Secondary School, Chennai
+              </h4>
+
+              <span>2011 — 2018</span>
+
+              <p class="timeline-text">
+                Indian National Olympiad in Informatics (INOI), Zonal
+                Computing Olympiad (ZCO)
+              </p>
+            </li>
+          </ol>
+        </section>
+      </article> -->
+
+      <!-- <div class="separator"></div> -->
+
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src=".assets/js/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"
+    integrity="sha512-DHNepbIus9t4e6YoMBSJLwl+nnm0tIwMBonsQQ+W9NKN6gVVVbomJs9Ii3mQ+HzGZiU5FyJLdnAz9a63ZgZvTQ=="
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
