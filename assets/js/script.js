@@ -107,8 +107,8 @@ const pdfMap = {
   "CAMPUS1.1": 25,
   "Dissertation research paper": 52,
   "MIXED USE1.1": 24,
-  "png2pdf": 11,
-  "SAC": 14,
+  png2pdf: 11,
+  SAC: 14,
   "SPRINT 2 SOCIAL INFRA": [8, true], // Sometimes 01, 02 not present
   "SRPINT 1 ROAD INFRA": [8, true],
   "UD SEM": 17,
@@ -120,11 +120,13 @@ for (let i = 0; i < projectItems.length; i++) {
   projectItems[i].addEventListener("click", function () {
     console.log("Clicked");
 
-    var imgSrc = this.querySelector("[data-project-img]").src.replaceAll("%20", " ");;
+    var imgSrc = this.querySelector("[data-project-img]").src.replaceAll(
+      "%20",
+      " "
+    );
 
     // One image projects first
     if (imgSrc.includes("MOOD BOARD")) {
-
       let innerHTMLString = "<ul class='testimonials-list has-scrollbar'>";
 
       innerHTMLString +=
@@ -141,7 +143,6 @@ for (let i = 0; i < projectItems.length; i++) {
       projectImagesList.innerHTML = innerHTMLString;
 
       projectsModalFunc();
-
     } else {
       // Multiple images. Open separate screen
 
@@ -171,6 +172,21 @@ for (let i = 0; i < projectItems.length; i++) {
             </li>`;
         i++;
       }
+
+      if (folderPath.includes("VIRTUAL REALITY")) {
+        // Add report pdf link at last
+
+        innerHTMLString += `
+          <li style='align-items: center'>
+            <div style="width: 84%; height: 84%; margin-left: 8%; margin-right: 8%; align-items: center">
+              <a class="form-btn" href="assets/pdfs/Virtual Reality Report.pdf" target="_blank" data-form-btn>
+                <ion-icon name="document-outline"></ion-icon>
+                <span>View Paper</span>
+              </a>
+            </div>
+          </li>`;
+      }
+
       innerHTMLString += "</ul>";
 
       sections.forEach((current) => {
@@ -186,21 +202,6 @@ for (let i = 0; i < projectItems.length; i++) {
       document.getElementById("project").style.display = "block";
 
       document.getElementById("project").innerHTML = innerHTMLString;
-
-      if(folderPath.includes("VIRTUAL REALITY")) {
-
-        let modalHtml = `
-            <div style="width: 40%; height: 40%; align-items: center">
-              <a class="form-btn" href="assets/pdfs/Virtual Reality Report.pdf" target="_blank" data-form-btn>
-                <ion-icon name="document-outline"></ion-icon>
-                <span>View Paper</span>
-              </a>
-            </div>`;
-
-        projectImagesList.innerHTML = modalHtml;
-
-        projectsModalFunc();
-      }
     }
   });
 }
